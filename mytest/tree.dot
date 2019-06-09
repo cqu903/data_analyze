@@ -1,0 +1,25 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="color_intensity <= 3.97\ngini = 0.664\nsamples = 133\nvalue = [45, 49, 39]\nclass = 琴酒", fillcolor="#39e5810c"] ;
+1 [label="proline <= 976.0\ngini = 0.153\nsamples = 48\nvalue = [4, 44, 0]\nclass = 琴酒", fillcolor="#39e581e8"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="od280/od315_of_diluted_wines <= 3.73\ngini = 0.043\nsamples = 45\nvalue = [1, 44, 0]\nclass = 琴酒", fillcolor="#39e581f9"] ;
+1 -> 2 ;
+3 [label="gini = 0.0\nsamples = 44\nvalue = [0, 44, 0]\nclass = 琴酒", fillcolor="#39e581ff"] ;
+2 -> 3 ;
+4 [label="gini = 0.0\nsamples = 1\nvalue = [1, 0, 0]\nclass = 雪莉", fillcolor="#e58139ff"] ;
+2 -> 4 ;
+5 [label="gini = 0.0\nsamples = 3\nvalue = [3, 0, 0]\nclass = 雪莉", fillcolor="#e58139ff"] ;
+1 -> 5 ;
+6 [label="flavanoids <= 1.785\ngini = 0.553\nsamples = 85\nvalue = [41, 5, 39]\nclass = 雪莉", fillcolor="#e581390b"] ;
+0 -> 6 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+7 [label="gini = 0.0\nsamples = 39\nvalue = [0, 0, 39]\nclass = 贝尔摩德", fillcolor="#8139e5ff"] ;
+6 -> 7 ;
+8 [label="proline <= 670.0\ngini = 0.194\nsamples = 46\nvalue = [41, 5, 0]\nclass = 雪莉", fillcolor="#e58139e0"] ;
+6 -> 8 ;
+9 [label="gini = 0.0\nsamples = 5\nvalue = [0, 5, 0]\nclass = 琴酒", fillcolor="#39e581ff"] ;
+8 -> 9 ;
+10 [label="gini = 0.0\nsamples = 41\nvalue = [41, 0, 0]\nclass = 雪莉", fillcolor="#e58139ff"] ;
+8 -> 10 ;
+}
